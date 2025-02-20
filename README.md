@@ -19,14 +19,16 @@ Use the cd command to navigate to the directory containing your code.
 cd /path/to/nbody_simulation
 
 Step 3: Compile the Code
-To compile the code, run the following command (ensure that your compiler supports C++11 or later):
-On Windows run this command:
+To compile the code, run the following command on Windows:
+
 g++ N-body-simulation.cpp -o N-body-simulation
 
 This will produce an executable file named N-body-simulation
 
 Step 4: Verify the Compilation
-After the compilation process, check if the executable was created in the current directory by listing the files:
+After the compilation process, check if the executable was created 
+in the current directory by listing the files:
+
 ls
 
 You should see N-body-simulation
