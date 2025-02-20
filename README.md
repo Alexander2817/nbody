@@ -44,8 +44,11 @@ To run the simulation, use the following command:
 
 Where:
 <num_particles>: Number of particles in the simulation (integer).
+
 <dt>: Time step for the simulation (double).
+  
 <num_steps>: Number of time steps to run the simulation (integer).
+
 <dump_interval>: The interval (in steps) to output the state of the simulation (double).
   
 Example Command:
