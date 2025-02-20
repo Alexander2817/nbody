@@ -183,7 +183,14 @@ void OutputState(const std::vector<Particle>& particles, std::ofstream& file) {
     }
 }
 
-
+/**
+ * The main function of the program. It takes four command line arguments: the number of particles to simulate, the time step, the number of steps to simulate, and the interval at which to output the state of the simulation to a file. It then initializes the particles, runs the simulation, and outputs the state of the simulation to a file at the specified interval.
+ * 
+ * @param argc The number of command line arguments.
+ * @param argv The command line arguments. argv[1] is the number of particles to simulate, argv[2] is the time step, argv[3] is the number of steps to simulate, and argv[4] is the interval at which to output the state of the simulation to a file.
+ * 
+ * @return 0 if the program runs successfully, 1 if an error occurs.
+ */
 int main(int argc, char* argv[]) {
     if(argc < 5) {
         std::cerr << "Usage: " << argv[0] << " <num_particles> <dt> <num_steps> <dump_interval>" << std::endl;
@@ -195,7 +202,9 @@ int main(int argc, char* argv[]) {
         double dump_interval = std::stod(argv[4]);
 
     std::vector<Particle> particles(num_particles);
-
+    /** Initialize the particles
+      * Randomly generate the mass, position, velocity, and force of each particle
+      */
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<> dis(-1000.0, 1000.0);
@@ -208,7 +217,10 @@ int main(int argc, char* argv[]) {
         particle.vy = 0.0;
         particle.vz = 0.0;
     }
-
+    /** This is the main simulation loop
+      * It updates the forces, velocities, and positions of the particles
+      * and outputs the state of the simulation to a file
+      */
     std::ofstream file("solar.tsv");
     for (int i = 0; i < num_steps; i++) {
         CalculateForce(particles);
@@ -220,7 +232,7 @@ int main(int argc, char* argv[]) {
     }
     file.close();
     return 0;
-    /***
+    /*** Test, modified for actual bigger scale code, error with int and double dump_interval
     std::ofstream file("small.tsv");
     for (int i = 0; i < num_steps; i++) {
         CalculateForce(particles);
