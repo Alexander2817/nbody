@@ -1,4 +1,4 @@
-##N-body Simulation in C++
+#N-body Simulation in C++
 
 This program simulates the motion of particles under gravitational forces
 , based on the laws of physics. The simulation computes the interaction
@@ -39,7 +39,7 @@ You should see N-body-simulation
 
 Step 5:Running the Simulation
 To run the simulation, use the following command:
-./N-body-simulation <num_particles> <dt> <num_steps> <dump_interval>
+./N-body-simulation (num_particles) (dt) (num_steps) (dump_interval)
 
 Where:
 - num_particles: Number of particles in the simulation.
@@ -51,7 +51,7 @@ Where:
 - dump_interval: The interval (in steps) to output the state of the simulation.
   
 Example Command:
-./nbody_simulation 100 0.01 1000 10
+./N-body-simulation 100 0.01 1000 10
 
 This runs the simulation with 100 particles, a time step of 0.01, 
 for 1000 steps, and outputs the state of the simulation every 10 steps.
