@@ -39,6 +39,7 @@ You should see N-body-simulation
 
 **Step 5:** Running the Simulation
 To run the simulation, use the following command:
+
 ./N-body-simulation (num_particles) (dt) (num_steps) (dump_interval)
 
 Where:
