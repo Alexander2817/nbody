@@ -17,7 +17,7 @@ On Windows, use the command prompt or a terminal emulator like Git Bash.
 **Step 2:** Navigate to the Project Directory
 Use the cd command to navigate to the directory containing your code.
 
-cd /path/to/nbody_simulation
+cd /path/to/N-body-simulation
 
 
 **Step 3:** Compile the Code
