@@ -39,17 +39,16 @@ You should see N-body-simulation
 
 Step 5:Running the Simulation
 To run the simulation, use the following command:
-
 ./N-body-simulation <num_particles> <dt> <num_steps> <dump_interval>
 
 Where:
-- <num_particles>: Number of particles in the simulation (integer).
+- num_particles: Number of particles in the simulation.
 
-- <dt>: Time step for the simulation (double).
+- dt: Time step for the simulation.
   
-- <num_steps>: Number of time steps to run the simulation (integer).
+- num_steps: Number of time steps to run the simulation.
 
-- <dump_interval>: The interval (in steps) to output the state of the simulation (double).
+- dump_interval: The interval (in steps) to output the state of the simulation.
   
 Example Command:
 ./nbody_simulation 100 0.01 1000 10
