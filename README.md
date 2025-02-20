@@ -1,7 +1,9 @@
-# nbody
+##N-body Simulation in C++
 
-N-body Simulation in C++
-This program simulates the motion of particles under gravitational forces, based on the laws of physics. The simulation computes the interaction between particles, updates their velocities and positions, and outputs the state of the system at regular intervals.
+This program simulates the motion of particles under gravitational forces
+, based on the laws of physics. The simulation computes the interaction
+between particles, updates their velocities and positions, and outputs the 
+state of the system at regular intervals.
 
 Things to Have:
 C++ Compiler 
