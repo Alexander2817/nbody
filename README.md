@@ -5,22 +5,22 @@ This program simulates the motion of particles under gravitational forces
 between particles, updates their velocities and positions, and outputs the 
 state of the system at regular intervals.
 
-Things to Have:
+**Things to Have:**
 C++ Compiler 
 Standard C++ library
 Text editor or IDE
 
-Step 1: Open Terminal (Command Prompt)
+**Step 1:** Open Terminal (Command Prompt)
 On Windows, use the command prompt or a terminal emulator like Git Bash.
 
 
-Step 2: Navigate to the Project Directory
+**Step 2:** Navigate to the Project Directory
 Use the cd command to navigate to the directory containing your code.
 
 cd /path/to/nbody_simulation
 
 
-Step 3: Compile the Code
+**Step 3:** Compile the Code
 To compile the code, run the following command on Windows:
 
 g++ N-body-simulation.cpp -o N-body-simulation
@@ -28,7 +28,7 @@ g++ N-body-simulation.cpp -o N-body-simulation
 This will produce an executable file named N-body-simulation
 
 
-Step 4: Verify the Compilation
+**Step 4:** Verify the Compilation
 After the compilation process, check if the executable was created 
 in the current directory by listing the files:
 
@@ -37,7 +37,7 @@ ls
 You should see N-body-simulation
 
 
-Step 5:Running the Simulation
+**Step 5:** Running the Simulation
 To run the simulation, use the following command:
 ./N-body-simulation (num_particles) (dt) (num_steps) (dump_interval)
 
